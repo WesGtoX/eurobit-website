@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,900');
+
+/*
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -7,8 +14,20 @@ html, body {
 }
 
 body {
-    background: url(../img/unsplash02.jpg) no-repeat 50% 50%;
+    background: url(../img/unsplash01.jpg) no-repeat 50% 50%;
     background-size: cover;
+}
+
+.nav ul li a {
+    color: #fff;
+    outline: none;
+}
+
+.nav ul li a:hover {
+    color: #FF701C;
+    outline: none;
+    text-decoration: none;
+
 }
 
 .logo {
@@ -21,7 +40,6 @@ body {
 
 .logo img {
     width: 200px;
-    background-color: #fff;
 }
 
 h1 img.load-screen {
@@ -36,10 +54,12 @@ h1 img.load-screen {
 }
 
 .nav ul li {
+    font-family: 'Vollkorn', serif;
     list-style: none;
     display: inline-block;
     color: #fff;
     padding-right: 36px;
+    font-weight: bolder;
 }
 
 .social-media {
@@ -82,16 +102,27 @@ h1 img.load-screen {
     font-size: 1.5em;
 }
 
-.header button {
+.header a button {
+    font-family: 'Vollkorn', serif;
     margin-top: 12px;
     border: none;
-    padding: 16px 40px;
-    background: #fff;
-    color: #000;
-    letter-spacing: 4px;
+    padding: 8px 18px;
+    background: #FF701C;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 2px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 16px;
+    outline: none;
 }
+
+.header a button:hover {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgb(255, 94, 0);
+}
+
 
 .bottom-bar {
     color: #fff;
@@ -124,7 +155,7 @@ h1 img.load-screen {
     width: 100%;
     height: 100vh;
     background: #fff;
-    top: 0%:
+    top: 0%;
 }
 
 .overlay h1 {
