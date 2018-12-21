@@ -1,3 +1,23 @@
+$(document).ready(function() {
+
+    // Get the header height
+    const headerHeight = $('.main-menu').outerHeight();
+    
+    const scrollLink = $("a[href^='#']")
+
+    // Smooth scroll
+    scrollLink.click(function(e) {
+        
+        const linkHref = $(this).attr('href');
+        
+        $('html, body').animate({
+            scrollTop: $(linkHref).offset().top - headerHeight + 20
+        }, 1000);
+
+        e.preventDefault();
+    });
+});
+
 TweenMax.to(".overlay h1", 2, {
     opacity: 0,
     y: -60,
@@ -53,22 +73,36 @@ TweenMax.from(".row p", 2, {
     ease: Expo.easeInOut
 })
 
-TweenMax.from(".header h1", 2, {
+TweenMax.from(".home h1", 2, {
     delay: 3.2,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 })
 
-TweenMax.from(".header p", 2, {
+TweenMax.from(".home p", 2, {
     delay: 3.4,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 })
 
-TweenMax.from(".header button", 2, {
+TweenMax.from(".home .info", 2, {
     delay: 3.6,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from(".home button", 2, {
+    delay: 3.8,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+})
+
+TweenMax.from(".form", 2, {
+    delay: 3.8,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut

@@ -22,7 +22,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
 	<link rel="manifest" href="static/favicon/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="static/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- stylesheet -->
@@ -31,65 +31,121 @@
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-	<!-- font-awesome -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>	
 
 	<div class="overlay">
 		<h1><img src="/static/img/eurobit-logo.png" class="load-screen" alt=""></h1>
 	</div>
-
-	<div class="wrapper">
-		<div class="logo"><img src="/static/img/eurobit-white-logo.png" alt=""></div>
-		<div class="nav">
-			<ul>
-				<li><a href="">CONTATE-NOS</a></li>
-				<!-- <li>Places</li> -->
-				<!-- <li>Hotels</li> -->
-				<!-- <li>Search</li> -->
-			</ul>
-		</div>
-		<div class="social-media">
-			<ul>
-				<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-				<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-				<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-			</ul>
-		</div>
-		<div class="side-strip">
-			<span>CRYPTOCURRENCY IS THE FUTURE!</span>
-		</div>
-		<div class="header">
-			<h1>Compra, venda e aluguel de Bitcoins</h1>
-			<p>Com a EuroBit você tem a tranquilidade em comprar e vender seus Bitcoins. Aluguel de Bitcoins, um jeito simples e fácil de multiplicar suas moedas.</p>
-			<a href="https://app.eurobit.com.br/pt-br/login/" target="_blank"><button>LOGIN</button></a>
-		<!-- </div> -->
-		<!-- <div class="bottom-bar"> -->
-			<!-- <div class="container"> -->
-				<!-- <div class="row"> -->
-					<!-- <div class="col-lg-4"> -->
-						<!-- <h6>Lorem ipsum dolor sit.</h6> -->
-						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p> -->
-					<!-- </div> -->
-					<!-- <div class="col-lg-4"> -->
-						<!-- <h6>Lorem ipsum dolor sit.</h6> -->
-						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p> -->
-					<!-- </div> -->
-					<!-- <div class="col-lg-4"> -->
-						<!-- <h6>Lorem ipsum dolor sit.</h6> -->
-						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam labore repellendus necessitatibus ipsa!</p> -->
-					<!-- </div> -->
+	
+	<nav class="main-menu">
+		<div class="container-fluid">
+			<div class="wrapper">
+				<div class="logo"><img src="/static/img/eurobit-white-logo.png" alt=""></div>
+				<!-- <div class="nav"> -->
+					<!-- <ul> -->
+						<!-- <li><a href="#">HOME</a></li> -->
+						<!-- <li><a href="#">ABOUT</a></li> -->
+						<!-- <li><a href="#">CONTATE-NOS</a></li> -->
+					<!-- </ul> -->
 				<!-- </div> -->
-			<!-- </div> -->
-		<!-- </div> -->
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="wrapper">
+			<div class="social-media">
+				<ul>
+					<li><a href="#"> <i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
+	
+	<div class="container-fluid">
+		<div class="wrapper">
+			<div class="side-strip">
+				<span>CRYPTOCURRENCY IS THE FUTURE!</span>
+			</div>
+		</div>
+	</div>
+			
+	<div class="container home-screen">
+		<div class="wrapper">
+			<div class="home">
+				<div class="col">
+					<h1>Compra, venda e aluguel de Bitcoins</h1>
+					<p>Com a EuroBit você tem a tranquilidade em comprar e vender seus Bitcoins. Aluguel de Bitcoins, um jeito simples e fácil de multiplicar suas moedas.</p>
+				</div>
+				
+				<div class="col info">
+					<h3>Mais informações?</h3>
+					<ul>
+						<li class="link-color">
+							<i class="fab fa-whatsapp"></i><a href="tel:+5517981730303">&nbsp;&nbsp;(17) 98173-0303</a>
+						</li>
+						<li class="link-color">
+							<i class="far fa-envelope"></i><a href="mailto:barone@eurobit.com.br">&nbsp;&nbsp;barone@eurobit.com.br</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col">
+					<a href="https://app.eurobit.com.br/pt-br/login/" target="_blank"><button class="btn btn-primary">LOGIN</button></a>
+					<a href="#contact"><button class="btn btn-primary contact">CONTATE-NOS</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container form">
+		<div class="col-lg-6 offset-lg-3">
+			<h3 id="contact" class="center">Contate-nos</h3>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" name="name" id="name" required placeholder="Nome">
+				</div>
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="phone" id="phone" required placeholder="Telefone">
+				</div>
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="mail" id="email" required placeholder="E-mail">
+				</div>
+
+				<div class="form-group">
+					<textarea type="text" class="form-control" name="message" id="message"  rows="4" required placeholder="Digite sua mensagem..."></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-primary">ENVIAR</button>
+				<!-- <button class="btn btn-primary back">VOLTAR</button> -->
+			</form>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			Copyright &copy; 2018&nbsp;-&nbsp;<a href="https://github.com/WesGtoX" target="_blank">Wesley Mendes</a>&nbsp;-&nbsp;All rights reserved.
+		</div>
+	</footer>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	
+	<!-- fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+
+	<!-- jQuery js -->
+	<script src="static/js/jquery-3.3.1.js"></script>
 
 	<!-- greensock -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
