@@ -9,12 +9,12 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Poppins !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 body {
-    background: url(../img/unsplash01.jpg) no-repeat 50% 50%;
-    background-size: cover;
+    background: url(../img/unsplash01.jpg) no-repeat fixed center;
+    background-size: cover; 
 }
 
 /* ========== LOAD SCREEN ========== */
@@ -82,10 +82,9 @@ h1 img.load-screen {
     width: 200px;
 }
 
-
 /* ========== SOCIAL MEDIA ========== */
 .social-media {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: -10px;
     transform: translateY(-50%);
@@ -106,7 +105,7 @@ h1 img.load-screen {
 /* ========== SIDE STRIP ========== */
 .side-strip {
     font-size: 0.8em;
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translateY(-50%);
     right: -10em;
@@ -146,8 +145,7 @@ h1 img.load-screen {
     text-decoration: none;
 }
 
-.container a button,
-.container .back {
+.container a button {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -164,13 +162,11 @@ h1 img.load-screen {
     background: rgb(255, 94, 0);
 }
 
-.container button.contact,
-.container .back {
+.container button.contact {
     background: #343a40 !important;
 }
 
-.container button.contact:hover,
-.container .back:hover {
+.container button.contact:hover {
     background: #424649 !important;
 }
 
@@ -181,7 +177,7 @@ h1 img.load-screen {
 
 .container .info h3 {
     margin-top: 100px;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.1em 0.2em;   
 }
 
 .wrapper {
@@ -189,20 +185,17 @@ h1 img.load-screen {
 }
 
 /* ========== FORM ========== */
-.form {
-    margin-bottom: 50px;
-}
-
 .container h3.center {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .container button {
     margin-right: 10px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50%;
     border: none;
     background: #FF701C;
     font-weight: bolder;
