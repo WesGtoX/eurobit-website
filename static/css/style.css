@@ -235,7 +235,7 @@ footer .container a:hover {
     .home {
         position: absolute;
         width: 80%;
-        top: 48%;
+        top: 250px;
         transform: translate(-50%, -50%);
     }
 
@@ -261,5 +261,86 @@ footer .container a:hover {
 
     .side-strip {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        position: absolute;
+        width: 80%;
+        top: 250px;
+    }
+
+    .container .info h3 {
+        margin-top: 30px; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .home {
+        position: absolute;
+        width: 80%;
+        top: 250px;
+    }
+
+    .container .info h3 {
+        margin-top: 30px; 
+    }
+
+    .container h3.center {
+        margin-bottom: 20px;
+    }
+    
+    .container button {
+        margin-top: 10px;
+        margin-bottom: 10%;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .home {
+        position: absolute;
+        width: 80%;
+        top: 300px;
+    }
+
+    .home ul {
+        font-size: 0.6em;
+    }
+
+    .home a button {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home {
+        position: absolute;
+        width: 80%;
+        top: 250px;
+    }
+
+    .home h1, .home h3 {
+        font-size: 1.0em;
+    }
+
+    .container .info h3 {
+        margin-top: 30px; 
+    }
+
+    .home p {
+        font-size: 1.0em;
+    }
+
+    .container h3.center {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+    
+    .container button {
+        margin-top: 10px;
+        margin-bottom: 10%;
+        border: none;
     }
 }

@@ -16,6 +16,28 @@ $(document).ready(function() {
 
         e.preventDefault();
     });
+
+    // Send form ajax
+    var btn_enviar = $(".btn-enviar");
+    
+    btn_enviar.on("click", function(e){
+        e.preventDefault();
+        
+        var dados = $("#contact-form").serialize();
+    
+        $.ajax({
+            url: "contato.php",
+            method: "POST",
+            dataType: "HTML",
+            data: dados 
+        }).done(function(retorno){
+            
+            // alert(retorno);
+            $("#contact-form").trigger("reset");
+        }).fail(function(retorno){
+            alert(retorno);
+        });  
+    });
 });
 
 TweenMax.to(".overlay h1", 2, {

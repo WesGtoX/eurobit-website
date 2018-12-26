@@ -18,9 +18,11 @@
                     "X=Mailer:PHP/".phpversion();
 
         if(mail($to,$subject,$body,$header)) {
-            header("Location: ./index.html");
+            // header("Location: ./index.html");
+            echo("Sua mensagem foi enviada com sucesso.");
         } else {
-            header("Location: ./index.html");
+            // header("Location: ./index.html");
+            echo("Ocorreu um erro. Tente novamente!");
         }
     }
 

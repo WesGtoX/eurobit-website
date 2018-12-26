@@ -109,7 +109,7 @@
 	<div class="container form">
 		<div class="col-lg-6 offset-lg-3">
 			<h3 id="contact" class="center">Contate-nos</h3>
-			<form method="POST" action="./contato.php">
+			<form id="contact-form">
 				<div class="form-group">
 					<input type="text" class="form-control" name="name" id="name" required placeholder="Nome">
 				</div>
@@ -125,8 +125,10 @@
 				<div class="form-group">
 					<textarea type="text" class="form-control" name="message" id="message"  rows="4" required placeholder="Digite sua mensagem..."></textarea>
 				</div>
+				
+				<!-- <div id="error"></div> -->
 
-				<button type="submit" class="btn btn-primary">ENVIAR</button>
+				<button type="submit" class="btn btn-primary btn-enviar">ENVIAR</button>
 				<!-- <button class="btn btn-primary back">VOLTAR</button> -->
 			</form>
 		</div>
